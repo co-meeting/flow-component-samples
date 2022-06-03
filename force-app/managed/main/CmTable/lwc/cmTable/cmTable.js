@@ -204,5 +204,7 @@ export default class CmTable extends CustomDatatableMixin(NavigationMixin(Lightn
   handleSelectedRow(event) {
     const selectedRows = event.detail.selectedRows;
     this.dispatchEvent(new FlowAttributeChangeEvent('selectedRecords', selectedRows));
+    console.table(selectedRows);
+    console.log(JSON.stringify(event));
   }
 }

@@ -2,7 +2,10 @@
   "packageDirectories": [
     {
       "path": "force-app/managed",
-      "default": true
+      "default": true,
+      "package": "Flow Component Samples",
+      "versionName": "ver 0.1",
+      "versionNumber": "0.1.0.NEXT"
     },
     {
       "path": "force-app/unmanaged"
@@ -11,5 +14,9 @@
   "name": "flow-component-samples",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
-  "sourceApiVersion": "54.0"
+  "sourceApiVersion": "54.0",
+  "packageAliases": {
+    "Flow Component Samples": "0Ho5F000000GmanSAC",
+    "Flow Component Samples@0.1.0-1": "04t5F000000Io1RQAS"
+  }
 }

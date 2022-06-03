@@ -1,0 +1,7 @@
+<template>
+  <template if:true={hasData}>
+    <lightning-record-view-form record-id={record.Id} object-api-name={objectName}>
+      <lightning-output-field field-name={fieldName}></lightning-output-field>
+    </lightning-record-view-form>
+  </template>
+</template>

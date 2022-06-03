@@ -1,0 +1,89 @@
+[
+  {
+    "fieldName": "Id",
+    "label": "ケース ID",
+    "type": "recordLink",
+    "typeAttributes": {
+      "label": {
+        "fieldName": "Id"
+      }
+    }
+  },
+  {
+    "fieldName": "Status",
+    "label": "状況",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "New",
+          "validFor": [],
+          "value": "New"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "Working",
+          "validFor": [],
+          "value": "Working"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "Escalated",
+          "validFor": [],
+          "value": "Escalated"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": true
+          },
+          "label": "Closed",
+          "validFor": [],
+          "value": "Closed"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "Priority",
+    "label": "優先度",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": null,
+          "label": "High",
+          "validFor": [],
+          "value": "High"
+        },
+        {
+          "attributes": null,
+          "label": "Medium",
+          "validFor": [],
+          "value": "Medium"
+        },
+        {
+          "attributes": null,
+          "label": "Low",
+          "validFor": [],
+          "value": "Low"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "SuppliedEmail",
+    "label": "メールアドレス",
+    "type": "email"
+  }
+]

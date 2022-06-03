@@ -1,0 +1,122 @@
+[
+  {
+    "fieldName": "Id",
+    "label": "取引先名",
+    "type": "recordLink",
+    "typeAttributes": {
+      "label": {
+        "fieldName": "Name"
+      }
+    }
+  },
+  {
+    "fieldName": "Phone",
+    "label": "取引先 電話",
+    "type": "phone"
+  },
+  {
+    "fieldName": "NumberOfEmployees",
+    "label": "従業員数",
+    "type": "number"
+  },
+  {
+    "fieldName": "BillingAddress",
+    "label": "住所(請求先)",
+    "type": "address"
+  },
+  {
+    "fieldName": "Rating",
+    "label": "取引先 評価",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": null,
+          "label": "熱い",
+          "validFor": [],
+          "value": "Hot"
+        },
+        {
+          "attributes": null,
+          "label": "温かい",
+          "validFor": [],
+          "value": "Warm"
+        },
+        {
+          "attributes": null,
+          "label": "寒い",
+          "validFor": [],
+          "value": "Cold"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "Website",
+    "label": "Web サイト",
+    "type": "url"
+  },
+  {
+    "fieldName": "Type",
+    "label": "取引先 種別",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": null,
+          "label": "Prospect",
+          "validFor": [],
+          "value": "Prospect"
+        },
+        {
+          "attributes": null,
+          "label": "Customer - Direct",
+          "validFor": [],
+          "value": "Customer - Direct"
+        },
+        {
+          "attributes": null,
+          "label": "Customer - Channel",
+          "validFor": [],
+          "value": "Customer - Channel"
+        },
+        {
+          "attributes": null,
+          "label": "Channel Partner / Reseller",
+          "validFor": [],
+          "value": "Channel Partner / Reseller"
+        },
+        {
+          "attributes": null,
+          "label": "Installation Partner",
+          "validFor": [],
+          "value": "Installation Partner"
+        },
+        {
+          "attributes": null,
+          "label": "Technology Partner",
+          "validFor": [],
+          "value": "Technology Partner"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "SystemModstamp",
+    "label": "System Modstamp",
+    "type": "date",
+    "typeAttributes": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit",
+      "hour": "2-digit",
+      "minute": "2-digit"
+    }
+  }
+]

@@ -1,0 +1,279 @@
+{
+  "picklistFieldValues": {
+    "ForecastCategory": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Opportunity/picklist-values/012000000000000AAA/ForecastCategory",
+      "values": [
+        {
+          "attributes": null,
+          "label": "売上予測から除外",
+          "validFor": [],
+          "value": "Omitted"
+        },
+        {
+          "attributes": null,
+          "label": "パイプライン",
+          "validFor": [],
+          "value": "Pipeline"
+        },
+        {
+          "attributes": null,
+          "label": "最善達成予測",
+          "validFor": [],
+          "value": "BestCase"
+        },
+        {
+          "attributes": null,
+          "label": "可能性が最も高い",
+          "validFor": [],
+          "value": "MostLikely"
+        },
+        {
+          "attributes": null,
+          "label": "達成予測",
+          "validFor": [],
+          "value": "Forecast"
+        },
+        {
+          "attributes": null,
+          "label": "完了",
+          "validFor": [],
+          "value": "Closed"
+        }
+      ]
+    },
+    "ForecastCategoryName": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Opportunity/picklist-values/012000000000000AAA/ForecastCategoryName",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Omitted",
+          "validFor": [],
+          "value": "Omitted"
+        },
+        {
+          "attributes": null,
+          "label": "Pipeline",
+          "validFor": [],
+          "value": "Pipeline"
+        },
+        {
+          "attributes": null,
+          "label": "Best Case",
+          "validFor": [],
+          "value": "Best Case"
+        },
+        {
+          "attributes": null,
+          "label": "Commit",
+          "validFor": [],
+          "value": "Commit"
+        },
+        {
+          "attributes": null,
+          "label": "Closed",
+          "validFor": [],
+          "value": "Closed"
+        }
+      ]
+    },
+    "LeadSource": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Opportunity/picklist-values/012000000000000AAA/LeadSource",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Web",
+          "validFor": [],
+          "value": "Web"
+        },
+        {
+          "attributes": null,
+          "label": "Phone Inquiry",
+          "validFor": [],
+          "value": "Phone Inquiry"
+        },
+        {
+          "attributes": null,
+          "label": "Partner Referral",
+          "validFor": [],
+          "value": "Partner Referral"
+        },
+        {
+          "attributes": null,
+          "label": "Purchased List",
+          "validFor": [],
+          "value": "Purchased List"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    },
+    "StageName": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Opportunity/picklist-values/012000000000000AAA/StageName",
+      "values": [
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 10,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Prospecting",
+          "validFor": [],
+          "value": "Prospecting"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 10,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Qualification",
+          "validFor": [],
+          "value": "Qualification"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 20,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Needs Analysis",
+          "validFor": [],
+          "value": "Needs Analysis"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 50,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Value Proposition",
+          "validFor": [],
+          "value": "Value Proposition"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 60,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Id. Decision Makers",
+          "validFor": [],
+          "value": "Id. Decision Makers"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 70,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Perception Analysis",
+          "validFor": [],
+          "value": "Perception Analysis"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 75,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Proposal/Price Quote",
+          "validFor": [],
+          "value": "Proposal/Price Quote"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 90,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Negotiation/Review",
+          "validFor": [],
+          "value": "Negotiation/Review"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": true,
+            "defaultProbability": 100,
+            "forecastCategoryName": "Closed",
+            "won": true
+          },
+          "label": "Closed Won",
+          "validFor": [],
+          "value": "Closed Won"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": true,
+            "defaultProbability": 0,
+            "forecastCategoryName": "Omitted",
+            "won": false
+          },
+          "label": "Closed Lost",
+          "validFor": [],
+          "value": "Closed Lost"
+        }
+      ]
+    },
+    "Type": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Opportunity/picklist-values/012000000000000AAA/Type",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Existing Customer - Upgrade",
+          "validFor": [],
+          "value": "Existing Customer - Upgrade"
+        },
+        {
+          "attributes": null,
+          "label": "Existing Customer - Replacement",
+          "validFor": [],
+          "value": "Existing Customer - Replacement"
+        },
+        {
+          "attributes": null,
+          "label": "Existing Customer - Downgrade",
+          "validFor": [],
+          "value": "Existing Customer - Downgrade"
+        },
+        {
+          "attributes": null,
+          "label": "New Customer",
+          "validFor": [],
+          "value": "New Customer"
+        }
+      ]
+    }
+  }
+}

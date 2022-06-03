@@ -1,0 +1,248 @@
+[
+  {
+    "fieldName": "Id",
+    "label": "商談名",
+    "type": "recordLink",
+    "typeAttributes": {
+      "label": {
+        "fieldName": "Name"
+      }
+    }
+  },
+  {
+    "fieldName": "Amount",
+    "label": "金額",
+    "type": "currency"
+  },
+  {
+    "fieldName": "IsPrivate",
+    "label": "非公開",
+    "type": "boolean"
+  },
+  {
+    "fieldName": "ExpectedRevenue",
+    "label": "期待収益",
+    "type": "currency"
+  },
+  {
+    "fieldName": "CloseDate",
+    "label": "完了予定日",
+    "type": "date",
+    "typeAttributes": {
+      "year": "numeric",
+      "month": "2-digit",
+      "day": "2-digit"
+    }
+  },
+  {
+    "fieldName": "Type",
+    "label": "商談 種別",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": null,
+          "label": "Existing Customer - Upgrade",
+          "validFor": [],
+          "value": "Existing Customer - Upgrade"
+        },
+        {
+          "attributes": null,
+          "label": "Existing Customer - Replacement",
+          "validFor": [],
+          "value": "Existing Customer - Replacement"
+        },
+        {
+          "attributes": null,
+          "label": "Existing Customer - Downgrade",
+          "validFor": [],
+          "value": "Existing Customer - Downgrade"
+        },
+        {
+          "attributes": null,
+          "label": "New Customer",
+          "validFor": [],
+          "value": "New Customer"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "StageName",
+    "label": "フェーズ",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 10,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Prospecting",
+          "validFor": [],
+          "value": "Prospecting"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 10,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Qualification",
+          "validFor": [],
+          "value": "Qualification"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 20,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Needs Analysis",
+          "validFor": [],
+          "value": "Needs Analysis"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 50,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Value Proposition",
+          "validFor": [],
+          "value": "Value Proposition"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 60,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Id. Decision Makers",
+          "validFor": [],
+          "value": "Id. Decision Makers"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 70,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Perception Analysis",
+          "validFor": [],
+          "value": "Perception Analysis"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 75,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Proposal/Price Quote",
+          "validFor": [],
+          "value": "Proposal/Price Quote"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": false,
+            "defaultProbability": 90,
+            "forecastCategoryName": "Pipeline",
+            "won": false
+          },
+          "label": "Negotiation/Review",
+          "validFor": [],
+          "value": "Negotiation/Review"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": true,
+            "defaultProbability": 100,
+            "forecastCategoryName": "Closed",
+            "won": true
+          },
+          "label": "Closed Won",
+          "validFor": [],
+          "value": "Closed Won"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "OpportunityStage",
+            "closed": true,
+            "defaultProbability": 0,
+            "forecastCategoryName": "Omitted",
+            "won": false
+          },
+          "label": "Closed Lost",
+          "validFor": [],
+          "value": "Closed Lost"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "Probability",
+    "label": "確度 (%)",
+    "type": "text"
+  },
+  {
+    "fieldName": "LeadSource",
+    "label": "リードソース",
+    "type": "picklist",
+    "typeAttributes": {
+      "options": [
+        {
+          "attributes": null,
+          "label": "Web",
+          "validFor": [],
+          "value": "Web"
+        },
+        {
+          "attributes": null,
+          "label": "Phone Inquiry",
+          "validFor": [],
+          "value": "Phone Inquiry"
+        },
+        {
+          "attributes": null,
+          "label": "Partner Referral",
+          "validFor": [],
+          "value": "Partner Referral"
+        },
+        {
+          "attributes": null,
+          "label": "Purchased List",
+          "validFor": [],
+          "value": "Purchased List"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    }
+  },
+  {
+    "fieldName": "Description",
+    "label": "説明",
+    "type": "text"
+  }
+]

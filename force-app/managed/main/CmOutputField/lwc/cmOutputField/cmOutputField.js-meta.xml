@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <masterLabel>CM OutputField</masterLabel>
+    <description
+  >Lightning風の項目表示ならこれ！レコードと項目を指定するだけで画面フロー上に標準のLightningと同じ形式で簡単に出力できるコンポーネントです！</description>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__FlowScreen" configurationEditor="c-cm-output-field-editor">
+        <propertyType name="T" extends="SObject" label="オブジェクト" />
+        <property label="レコード" name="record" role="inputOnly" type="{T}" />
+        <property label="オブジェクト名" name="objectName" type="String" role="inputOnly" />
+        <property label="項目名(API参照名)" name="fieldName" type="String" role="inputOnly" />
+      </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

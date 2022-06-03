@@ -1,0 +1,15 @@
+[
+  {
+    "Id": "0061m000005BVBIAA4",
+    "Name": "サンプル商談",
+    "Amount": 20000,
+    "IsPrivate": true,
+    "ExpectedRevenue": 2000,
+    "CloseDate": "2022-03-03",
+    "Type": "Existing Customer - Upgrade",
+    "StageName": "Prospecting",
+    "Probability": 10,
+    "LeadSource": "Web",
+    "Description": "サンプル商談の解説\r\n２行目\r\n３行目"
+  }
+]

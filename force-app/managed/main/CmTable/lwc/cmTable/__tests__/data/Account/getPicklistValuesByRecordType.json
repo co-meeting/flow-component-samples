@@ -1,0 +1,546 @@
+{
+  "picklistFieldValues": {
+    "AccountSource": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/AccountSource",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Web",
+          "validFor": [],
+          "value": "Web"
+        },
+        {
+          "attributes": null,
+          "label": "Phone Inquiry",
+          "validFor": [],
+          "value": "Phone Inquiry"
+        },
+        {
+          "attributes": null,
+          "label": "Partner Referral",
+          "validFor": [],
+          "value": "Partner Referral"
+        },
+        {
+          "attributes": null,
+          "label": "Purchased List",
+          "validFor": [],
+          "value": "Purchased List"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    },
+    "BillingGeocodeAccuracy": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/BillingGeocodeAccuracy",
+      "values": [
+        {
+          "attributes": null,
+          "label": "住所",
+          "validFor": [],
+          "value": "Address"
+        },
+        {
+          "attributes": null,
+          "label": "NearAddress",
+          "validFor": [],
+          "value": "NearAddress"
+        },
+        {
+          "attributes": null,
+          "label": "ブロック",
+          "validFor": [],
+          "value": "Block"
+        },
+        {
+          "attributes": null,
+          "label": "町名・番地",
+          "validFor": [],
+          "value": "Street"
+        },
+        {
+          "attributes": null,
+          "label": "ExtendedZip",
+          "validFor": [],
+          "value": "ExtendedZip"
+        },
+        {
+          "attributes": null,
+          "label": "郵便番号",
+          "validFor": [],
+          "value": "Zip"
+        },
+        {
+          "attributes": null,
+          "label": "近隣",
+          "validFor": [],
+          "value": "Neighborhood"
+        },
+        {
+          "attributes": null,
+          "label": "市区町村",
+          "validFor": [],
+          "value": "City"
+        },
+        {
+          "attributes": null,
+          "label": "郡",
+          "validFor": [],
+          "value": "County"
+        },
+        {
+          "attributes": null,
+          "label": "都道府県",
+          "validFor": [],
+          "value": "State"
+        },
+        {
+          "attributes": null,
+          "label": "不明",
+          "validFor": [],
+          "value": "Unknown"
+        }
+      ]
+    },
+    "CleanStatus": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/CleanStatus",
+      "values": [
+        {
+          "attributes": null,
+          "label": "同期済み",
+          "validFor": [],
+          "value": "Matched"
+        },
+        {
+          "attributes": null,
+          "label": "不一致",
+          "validFor": [],
+          "value": "Different"
+        },
+        {
+          "attributes": null,
+          "label": "レビュー済み",
+          "validFor": [],
+          "value": "Acknowledged"
+        },
+        {
+          "attributes": null,
+          "label": "該当なし",
+          "validFor": [],
+          "value": "NotFound"
+        },
+        {
+          "attributes": null,
+          "label": "無効",
+          "validFor": [],
+          "value": "Inactive"
+        },
+        {
+          "attributes": null,
+          "label": "未比較",
+          "validFor": [],
+          "value": "Pending"
+        },
+        {
+          "attributes": null,
+          "label": "一致を選択",
+          "validFor": [],
+          "value": "SelectMatch"
+        },
+        {
+          "attributes": null,
+          "label": "スキップ",
+          "validFor": [],
+          "value": "Skipped"
+        }
+      ]
+    },
+    "Industry": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/Industry",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Agriculture",
+          "validFor": [],
+          "value": "Agriculture"
+        },
+        {
+          "attributes": null,
+          "label": "Apparel",
+          "validFor": [],
+          "value": "Apparel"
+        },
+        {
+          "attributes": null,
+          "label": "Banking",
+          "validFor": [],
+          "value": "Banking"
+        },
+        {
+          "attributes": null,
+          "label": "Biotechnology",
+          "validFor": [],
+          "value": "Biotechnology"
+        },
+        {
+          "attributes": null,
+          "label": "Chemicals",
+          "validFor": [],
+          "value": "Chemicals"
+        },
+        {
+          "attributes": null,
+          "label": "Communications",
+          "validFor": [],
+          "value": "Communications"
+        },
+        {
+          "attributes": null,
+          "label": "Construction",
+          "validFor": [],
+          "value": "Construction"
+        },
+        {
+          "attributes": null,
+          "label": "Consulting",
+          "validFor": [],
+          "value": "Consulting"
+        },
+        {
+          "attributes": null,
+          "label": "Education",
+          "validFor": [],
+          "value": "Education"
+        },
+        {
+          "attributes": null,
+          "label": "Electronics",
+          "validFor": [],
+          "value": "Electronics"
+        },
+        {
+          "attributes": null,
+          "label": "Energy",
+          "validFor": [],
+          "value": "Energy"
+        },
+        {
+          "attributes": null,
+          "label": "Engineering",
+          "validFor": [],
+          "value": "Engineering"
+        },
+        {
+          "attributes": null,
+          "label": "Entertainment",
+          "validFor": [],
+          "value": "Entertainment"
+        },
+        {
+          "attributes": null,
+          "label": "Environmental",
+          "validFor": [],
+          "value": "Environmental"
+        },
+        {
+          "attributes": null,
+          "label": "Finance",
+          "validFor": [],
+          "value": "Finance"
+        },
+        {
+          "attributes": null,
+          "label": "Food & Beverage",
+          "validFor": [],
+          "value": "Food & Beverage"
+        },
+        {
+          "attributes": null,
+          "label": "Government",
+          "validFor": [],
+          "value": "Government"
+        },
+        {
+          "attributes": null,
+          "label": "Healthcare",
+          "validFor": [],
+          "value": "Healthcare"
+        },
+        {
+          "attributes": null,
+          "label": "Hospitality",
+          "validFor": [],
+          "value": "Hospitality"
+        },
+        {
+          "attributes": null,
+          "label": "Insurance",
+          "validFor": [],
+          "value": "Insurance"
+        },
+        {
+          "attributes": null,
+          "label": "Machinery",
+          "validFor": [],
+          "value": "Machinery"
+        },
+        {
+          "attributes": null,
+          "label": "Manufacturing",
+          "validFor": [],
+          "value": "Manufacturing"
+        },
+        {
+          "attributes": null,
+          "label": "Media",
+          "validFor": [],
+          "value": "Media"
+        },
+        {
+          "attributes": null,
+          "label": "Not For Profit",
+          "validFor": [],
+          "value": "Not For Profit"
+        },
+        {
+          "attributes": null,
+          "label": "Recreation",
+          "validFor": [],
+          "value": "Recreation"
+        },
+        {
+          "attributes": null,
+          "label": "Retail",
+          "validFor": [],
+          "value": "Retail"
+        },
+        {
+          "attributes": null,
+          "label": "Shipping",
+          "validFor": [],
+          "value": "Shipping"
+        },
+        {
+          "attributes": null,
+          "label": "Technology",
+          "validFor": [],
+          "value": "Technology"
+        },
+        {
+          "attributes": null,
+          "label": "Telecommunications",
+          "validFor": [],
+          "value": "Telecommunications"
+        },
+        {
+          "attributes": null,
+          "label": "Transportation",
+          "validFor": [],
+          "value": "Transportation"
+        },
+        {
+          "attributes": null,
+          "label": "Utilities",
+          "validFor": [],
+          "value": "Utilities"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    },
+    "Ownership": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/Ownership",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Public",
+          "validFor": [],
+          "value": "Public"
+        },
+        {
+          "attributes": null,
+          "label": "Private",
+          "validFor": [],
+          "value": "Private"
+        },
+        {
+          "attributes": null,
+          "label": "Subsidiary",
+          "validFor": [],
+          "value": "Subsidiary"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    },
+    "Rating": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/Rating",
+      "values": [
+        {
+          "attributes": null,
+          "label": "熱い",
+          "validFor": [],
+          "value": "Hot"
+        },
+        {
+          "attributes": null,
+          "label": "温かい",
+          "validFor": [],
+          "value": "Warm"
+        },
+        {
+          "attributes": null,
+          "label": "寒い",
+          "validFor": [],
+          "value": "Cold"
+        }
+      ]
+    },
+    "ShippingGeocodeAccuracy": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/ShippingGeocodeAccuracy",
+      "values": [
+        {
+          "attributes": null,
+          "label": "住所",
+          "validFor": [],
+          "value": "Address"
+        },
+        {
+          "attributes": null,
+          "label": "NearAddress",
+          "validFor": [],
+          "value": "NearAddress"
+        },
+        {
+          "attributes": null,
+          "label": "ブロック",
+          "validFor": [],
+          "value": "Block"
+        },
+        {
+          "attributes": null,
+          "label": "町名・番地",
+          "validFor": [],
+          "value": "Street"
+        },
+        {
+          "attributes": null,
+          "label": "ExtendedZip",
+          "validFor": [],
+          "value": "ExtendedZip"
+        },
+        {
+          "attributes": null,
+          "label": "郵便番号",
+          "validFor": [],
+          "value": "Zip"
+        },
+        {
+          "attributes": null,
+          "label": "近隣",
+          "validFor": [],
+          "value": "Neighborhood"
+        },
+        {
+          "attributes": null,
+          "label": "市区町村",
+          "validFor": [],
+          "value": "City"
+        },
+        {
+          "attributes": null,
+          "label": "郡",
+          "validFor": [],
+          "value": "County"
+        },
+        {
+          "attributes": null,
+          "label": "都道府県",
+          "validFor": [],
+          "value": "State"
+        },
+        {
+          "attributes": null,
+          "label": "不明",
+          "validFor": [],
+          "value": "Unknown"
+        }
+      ]
+    },
+    "Type": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Account/picklist-values/012000000000000AAA/Type",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Prospect",
+          "validFor": [],
+          "value": "Prospect"
+        },
+        {
+          "attributes": null,
+          "label": "Customer - Direct",
+          "validFor": [],
+          "value": "Customer - Direct"
+        },
+        {
+          "attributes": null,
+          "label": "Customer - Channel",
+          "validFor": [],
+          "value": "Customer - Channel"
+        },
+        {
+          "attributes": null,
+          "label": "Channel Partner / Reseller",
+          "validFor": [],
+          "value": "Channel Partner / Reseller"
+        },
+        {
+          "attributes": null,
+          "label": "Installation Partner",
+          "validFor": [],
+          "value": "Installation Partner"
+        },
+        {
+          "attributes": null,
+          "label": "Technology Partner",
+          "validFor": [],
+          "value": "Technology Partner"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    }
+  }
+}

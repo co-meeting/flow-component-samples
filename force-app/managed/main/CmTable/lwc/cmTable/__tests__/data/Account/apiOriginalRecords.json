@@ -1,0 +1,139 @@
+[
+  {
+    "Id": "0011m00000X4zMYAAZ",
+    "Name": "テスト取引先A-1",
+    "Phone": "993-999-9999",
+    "NumberOfEmployees": 10,
+    "BillingAddress": {
+      "street": "南池袋2-45-1",
+      "city": "豊島区",
+      "state": "東京都",
+      "postalCode": "171-8422",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Hot",
+    "Website": "https://xxxxxx.xxxxx.cmflow.example.com",
+    "Type": "Technology Partner",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000XVVmrAAH",
+    "Name": "Sample Account for Entitlements",
+    "Phone": null,
+    "NumberOfEmployees": null,
+    "BillingAddress": null,
+    "Rating": null,
+    "Website": null,
+    "Type": null,
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMDAAZ",
+    "Name": "テスト取引先A",
+    "Phone": "999-9991-9999",
+    "NumberOfEmployees": 10000,
+    "BillingAddress": {
+      "street": "中野4-8-1",
+      "city": "中野区",
+      "state": "東京都",
+      "postalCode": "164-8501",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Warm",
+    "Website": null,
+    "Type": "Channel Partner / Reseller",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMEAAZ",
+    "Name": "テスト取引先B",
+    "Phone": "999-9992-9999",
+    "NumberOfEmployees": 1000,
+    "BillingAddress": {
+      "street": "立石5-13-1",
+      "city": "葛飾区",
+      "state": "東京都",
+      "postalCode": "124-8555",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Hot",
+    "Website": "https://b.cmflow.example.com",
+    "Type": "Customer - Direct",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMFAAZ",
+    "Name": "テスト取引先C",
+    "Phone": "999-9993-9999",
+    "NumberOfEmployees": 100,
+    "BillingAddress": {
+      "street": "本町6-6-3",
+      "city": "小金井市",
+      "state": "東京都",
+      "postalCode": "184-8504",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Cold",
+    "Website": null,
+    "Type": "Installation Partner",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMGAAZ",
+    "Name": "テスト取引先D",
+    "Phone": "999-9994-9999",
+    "NumberOfEmployees": 200,
+    "BillingAddress": {
+      "street": "世田谷4-21-27",
+      "city": "世田谷区",
+      "state": "東京都",
+      "postalCode": "154-8504",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Warm",
+    "Website": null,
+    "Type": "Customer - Channel",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMHAAZ",
+    "Name": "テスト取引先E",
+    "Phone": "999-9995-9999",
+    "NumberOfEmployees": 255,
+    "BillingAddress": {
+      "street": "荒川2-2-3",
+      "city": "荒川区",
+      "state": "東京都",
+      "postalCode": "116-8501",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Cold",
+    "Website": null,
+    "Type": "Channel Partner / Reseller",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  },
+  {
+    "Id": "0011m00000X4zMIAAZ",
+    "Name": "テスト取引先F",
+    "Phone": "999-9996-9999",
+    "NumberOfEmployees": 632,
+    "BillingAddress": {
+      "street": "元本郷町3-24-1",
+      "city": "八王子市",
+      "state": "東京都",
+      "postalCode": "192-8501",
+      "country": "JP",
+      "geocodeAccuracy": "Address"
+    },
+    "Rating": "Warm",
+    "Website": null,
+    "Type": "Channel Partner / Reseller",
+    "SystemModstamp": "2022-03-03T09:34:57.000Z"
+  }
+]

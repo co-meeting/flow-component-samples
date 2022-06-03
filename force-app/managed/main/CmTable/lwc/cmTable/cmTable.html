@@ -1,0 +1,66 @@
+<template>
+  <!-- LWC実行時にエラーが発生しない場合-->
+  <template if:false={errorInfo}>
+    <!-- サーバー問い合わせ時に表示する内容-->
+    <div if:true={isLoading} class="spinnerHolder">
+      <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+    </div>
+
+    <!-- 表形式でデータ表示-->
+    <div if:true={hasData} style={style}>
+      <c-custom-datatable
+        key-field="id"
+        data={records}
+        columns={columns}
+        hide-checkbox-column={isCheckbox}
+        onrowselection={handleSelectedRow}
+      >
+      </c-custom-datatable>
+    </div>
+    <!-- データが沢山ある時の表示-->
+    <template if:true={hasMoreRecords}>
+      <lightning-layout horizontal-align="space">
+        <lightning-layout-item padding="around-small">
+          <template if:true={isLoadingMore}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+          </template>
+          <template if:false={isLoadingMore}>
+            <lightning-button label="さらに読み込む" title="さらに読み込む" onclick={handleLoadMore}></lightning-button>
+            <lightning-button
+              label="すべて読み込む"
+              title="すべて読み込む"
+              onclick={handleLoadAll}
+              class="slds-m-left_small"
+            ></lightning-button>
+          </template>
+        </lightning-layout-item>
+      </lightning-layout>
+    </template>
+    <!-- データが存在しない時の表示-->
+    <template if:true={hasNoRecords}>
+      <div class="slds-m-around_x-small">データはありません。</div>
+    </template>
+  </template>
+
+  <!-- サーバー問い合わせ時にエラー発生した時に表示する内容-->
+  <template if:true={errorInfo}>
+    <div class="slds-scoped-notification slds-media slds-media_center slds-theme_error" role="status">
+      <div class="slds-media__figure">
+        <span class="slds-icon_container slds-icon-utility-error" title="error">
+          <lightning-icon icon-name="utility:error" title="Error" size="x-small" variant="inverse"></lightning-icon>
+        </span>
+      </div>
+      <div class="slds-media__body">
+        <p>【CmTable Component Error】</p>
+        <ul class="slds-p-left_medium slds-list_dotted">
+          <li>{errorInfo.title}</li>
+          <li>{errorInfo.message}</li>
+          <li if:true={errorInfo.method}>
+            error method: {errorInfo.method}
+            <span if:true={errorInfo.arguments}> ({errorInfo.arguments}) </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </template>
+</template>

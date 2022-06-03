@@ -1,0 +1,27 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef11"
+      },
+      "Name": "テスト取引先A-1",
+      "Phone": "993-999-9999",
+      "Rating": "Hot",
+      "NumberOfEmployees": 10,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "171-8422",
+      "BillingState": "東京都",
+      "BillingCity": "豊島区",
+      "BillingStreet": "南池袋2-45-1",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.72610327363136,
+      "BillingLongitude": 139.71665807535095,
+      "Ownership": "Public",
+      "Industry": "Finance",
+      "Type": "Technology Partner",
+      "ParentId": "@AccountRef1",
+      "Website": "https://xxxxxx.xxxxx.cmflow.example.com"
+    }
+  ]
+}

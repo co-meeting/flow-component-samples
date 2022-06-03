@@ -1,0 +1,196 @@
+{
+  "picklistFieldValues": {
+    "Origin": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Case/picklist-values/012000000000000AAA/Origin",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Phone",
+          "validFor": [],
+          "value": "Phone"
+        },
+        {
+          "attributes": null,
+          "label": "Email",
+          "validFor": [],
+          "value": "Email"
+        },
+        {
+          "attributes": null,
+          "label": "Web",
+          "validFor": [],
+          "value": "Web"
+        }
+      ]
+    },
+    "Priority": {
+      "controllerValues": {},
+      "defaultValue": {
+        "attributes": null,
+        "label": "Medium",
+        "validFor": [],
+        "value": "Medium"
+      },
+      "url": "/services/data/v54.0/ui-api/object-info/Case/picklist-values/012000000000000AAA/Priority",
+      "values": [
+        {
+          "attributes": null,
+          "label": "High",
+          "validFor": [],
+          "value": "High"
+        },
+        {
+          "attributes": null,
+          "label": "Medium",
+          "validFor": [],
+          "value": "Medium"
+        },
+        {
+          "attributes": null,
+          "label": "Low",
+          "validFor": [],
+          "value": "Low"
+        }
+      ]
+    },
+    "Reason": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Case/picklist-values/012000000000000AAA/Reason",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Installation",
+          "validFor": [],
+          "value": "Installation"
+        },
+        {
+          "attributes": null,
+          "label": "Equipment Complexity",
+          "validFor": [],
+          "value": "Equipment Complexity"
+        },
+        {
+          "attributes": null,
+          "label": "Performance",
+          "validFor": [],
+          "value": "Performance"
+        },
+        {
+          "attributes": null,
+          "label": "Breakdown",
+          "validFor": [],
+          "value": "Breakdown"
+        },
+        {
+          "attributes": null,
+          "label": "Equipment Design",
+          "validFor": [],
+          "value": "Equipment Design"
+        },
+        {
+          "attributes": null,
+          "label": "Feedback",
+          "validFor": [],
+          "value": "Feedback"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    },
+    "Status": {
+      "controllerValues": {},
+      "defaultValue": {
+        "attributes": {
+          "picklistAtrributesValueType": "CaseStatus",
+          "closed": false
+        },
+        "label": "New",
+        "validFor": [],
+        "value": "New"
+      },
+      "url": "/services/data/v54.0/ui-api/object-info/Case/picklist-values/012000000000000AAA/Status",
+      "values": [
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "New",
+          "validFor": [],
+          "value": "New"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "Working",
+          "validFor": [],
+          "value": "Working"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": false
+          },
+          "label": "Escalated",
+          "validFor": [],
+          "value": "Escalated"
+        },
+        {
+          "attributes": {
+            "picklistAtrributesValueType": "CaseStatus",
+            "closed": true
+          },
+          "label": "Closed",
+          "validFor": [],
+          "value": "Closed"
+        }
+      ]
+    },
+    "Type": {
+      "controllerValues": {},
+      "defaultValue": null,
+      "url": "/services/data/v54.0/ui-api/object-info/Case/picklist-values/012000000000000AAA/Type",
+      "values": [
+        {
+          "attributes": null,
+          "label": "Mechanical",
+          "validFor": [],
+          "value": "Mechanical"
+        },
+        {
+          "attributes": null,
+          "label": "Electrical",
+          "validFor": [],
+          "value": "Electrical"
+        },
+        {
+          "attributes": null,
+          "label": "Electronic",
+          "validFor": [],
+          "value": "Electronic"
+        },
+        {
+          "attributes": null,
+          "label": "Structural",
+          "validFor": [],
+          "value": "Structural"
+        },
+        {
+          "attributes": null,
+          "label": "Other",
+          "validFor": [],
+          "value": "Other"
+        }
+      ]
+    }
+  }
+}

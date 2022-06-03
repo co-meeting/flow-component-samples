@@ -1,0 +1,5 @@
+{
+  "message": "Illegal value for parameter: 'recordTypeId': masterRecordTypeId",
+  "statusCode": 400,
+  "errorCode": "INVALID_ID_FIELD"
+}

@@ -1,0 +1,131 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef1"
+      },
+      "Name": "テスト取引先A",
+      "Phone": "999-9991-9999",
+      "NumberOfEmployees": 10000,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "164-8501",
+      "BillingState": "東京都",
+      "BillingCity": "中野区",
+      "BillingStreet": "中野4-8-1",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.707323965812044,
+      "BillingLongitude": 139.66372332468657,
+      "Ownership": "Public",
+      "Industry": "Biotechnology",
+      "Type": "Channel Partner / Reseller",
+      "Rating": "Warm"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef2"
+      },
+      "Name": "テスト取引先B",
+      "Phone": "999-9992-9999",
+      "Rating": "Hot",
+      "NumberOfEmployees": 1000,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "124-8555",
+      "BillingState": "東京都",
+      "BillingCity": "葛飾区",
+      "BillingStreet": "立石5-13-1",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.74346483466948,
+      "BillingLongitude": 139.84721630373136,
+      "Ownership": "Other",
+      "Industry": "Recreation",
+      "Type": "Customer - Direct",
+      "Website": "https://b.cmflow.example.com"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef3"
+      },
+      "Name": "テスト取引先C",
+      "Phone": "999-9993-9999",
+      "NumberOfEmployees": 100,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "184-8504",
+      "BillingState": "東京都",
+      "BillingCity": "小金井市",
+      "BillingStreet": "本町6-6-3",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.69947055066959,
+      "BillingLongitude": 139.50302729038197,
+      "Ownership": "Private",
+      "Industry": "Banking",
+      "Type": "Installation Partner",
+      "Rating": "Cold"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef4"
+      },
+      "Name": "テスト取引先D",
+      "Phone": "999-9994-9999",
+      "NumberOfEmployees": 200,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "154-8504",
+      "BillingState": "東京都",
+      "BillingCity": "世田谷区",
+      "BillingStreet": "世田谷4-21-27",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.645990572735535,
+      "BillingLongitude": 139.65285671442382,
+      "Ownership": "Subsidiary",
+      "Industry": "Utilities",
+      "Type": "Customer - Channel",
+      "Rating": "Warm"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef5"
+      },
+      "Name": "テスト取引先E",
+      "Phone": "999-9995-9999",
+      "NumberOfEmployees": 255,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "116-8501",
+      "BillingState": "東京都",
+      "BillingCity": "荒川区",
+      "BillingStreet": "荒川2-2-3",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.73605394677904,
+      "BillingLongitude": 139.7833220192972,
+      "Ownership": "Private",
+      "Industry": "Communications",
+      "Type": "Channel Partner / Reseller",
+      "Rating": "Cold"
+    },
+    {
+      "attributes": {
+        "type": "Account",
+        "referenceId": "AccountRef6"
+      },
+      "Name": "テスト取引先F",
+      "Phone": "999-9996-9999",
+      "NumberOfEmployees": 632,
+      "BillingCountry": "JP",
+      "BillingPostalCode": "192-8501",
+      "BillingState": "東京都",
+      "BillingCity": "八王子市",
+      "BillingStreet": "元本郷町3-24-1",
+      "BillingGeocodeAccuracy": "Address",
+      "BillingLatitude": 35.666489288409046,
+      "BillingLongitude": 139.31603452051326,
+      "Ownership": "Public",
+      "Industry": "Biotechnology",
+      "Type": "Channel Partner / Reseller",
+      "Rating": "Warm"
+    }
+  ]
+}

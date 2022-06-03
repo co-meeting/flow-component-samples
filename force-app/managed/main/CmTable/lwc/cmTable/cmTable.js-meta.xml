@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <masterLabel>CM Table</masterLabel>
+    <description
+  >レコード一覧をテーブル表示したければこれ！レコード一覧を指定するだけ簡単テーブル表示！チェックボックス表示のON/OFF機能もあるので入力用にも使えます！</description>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__FlowScreen">
+        <propertyType name="T" extends="SObject" label="オブジェクト" />
+        <property label="レコード一覧" name="originalRecords" role="inputOnly" type="{T[]}" />
+        <property
+        label="項目名(API参照名)複数指定の場合は(,)カンマ区切り"
+        name="fieldNames"
+        type="String"
+        role="inputOnly"
+      />
+        <property label="オブジェクト名" name="objectName" type="String" role="inputOnly" />
+        <property label="選択用チェックボックスを非表示" name="isCheckbox" type="Boolean" role="inputOnly" />
+        <property label="高さ(px)" name="height" type="Integer" role="inputOnly" />
+        <property name="selectedRecords" role="outputOnly" label="選択されたレコード一覧" type="{T[]}" />
+      </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,8 +1,11 @@
 {
   "packageDirectories": [
     {
-      "path": "force-app",
+      "path": "force-app/managed",
       "default": true
+    },
+    {
+      "path": "force-app/unmanaged"
     }
   ],
   "name": "flow-component-samples",

@@ -1,0 +1,5 @@
+{
+  "message": "このレコードへのアクセス権がありません。システム管理者にサポートを依頼するか、アクセス権を要求してください。",
+  "statusCode": 403,
+  "errorCode": "INSUFFICIENT_ACCESS"
+}

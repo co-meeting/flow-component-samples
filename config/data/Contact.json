@@ -1,0 +1,26 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Contact",
+        "referenceId": "ContactRef1"
+      },
+      "AccountId": "@AccountRef1",
+      "Phone": "999-9999-9992",
+      "LastName": "取引A",
+      "FirstName": "太郎",
+      "Email": "torichi.a.tarou@cmflow.example.com"
+    },
+    {
+      "attributes": {
+        "type": "Contact",
+        "referenceId": "ContactRef2"
+      },
+      "AccountId": "@AccountRef1",
+      "Phone": "999-9999-9991",
+      "LastName": "取引A",
+      "FirstName": "次郎",
+      "Email": "torihiki.a.jirou@cmflow.example.com"
+    }
+  ]
+}

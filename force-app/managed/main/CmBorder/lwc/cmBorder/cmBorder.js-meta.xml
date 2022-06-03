@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <masterLabel>CM Border</masterLabel>
+    <description
+  >画面フローに区切りの線を引きたい！そう思ったらこれ！何も指定しなくてもシンプルな線が追加されます。色やサイズ、太さなど調整可能です！</description>
+    <isExposed>true</isExposed>
+    <targets>
+      <target>lightning__FlowScreen</target>
+    </targets>
+    <targetConfigs>
+      <targetConfig targets="lightning__FlowScreen">
+        <property
+        label="border 16進カラーコード(未指定時:#c9c9c9)"
+        name="borderColor"
+        type="String"
+        default="#c9c9c9"
+        role="inputOnly"
+      />
+        <property
+        label="border スタイル(未指定時:solid)"
+        name="borderStyle"
+        type="String"
+        default="solid"
+        role="inputOnly"
+      />
+        <property label="border 太さ[px](未指定時:1)" name="borderWidth" type="Integer" default="1" role="inputOnly" />
+        <property label="横幅(未指定時:100%)" name="width" type="String" default="100%" role="inputOnly" />
+        <property label="追加CSS" name="additionalStyle" type="String" default="" role="inputOnly" />
+      </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

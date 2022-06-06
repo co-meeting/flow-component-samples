@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
-    <apiVersion>53.0</apiVersion>
+    <apiVersion>54.0</apiVersion>
     <interviewLabel>CmTableWrapper {!$Flow.CurrentDateTime}</interviewLabel>
     <label>CmTableWrapper</label>
     <processMetadataValues>
@@ -107,24 +107,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>screen_sample_Section1</name>
-            <fieldType>RegionContainer</fieldType>
-            <fields>
-                <name>screen_sample_Section1_Column1</name>
-                <fieldType>Region</fieldType>
-                <inputParameters>
-                    <name>width</name>
-                    <value>
-                        <stringValue>12</stringValue>
-                    </value>
-                </inputParameters>
-                <isRequired>false</isRequired>
-            </fields>
-            <isRequired>false</isRequired>
-        </fields>
-        <fields>
             <name>display_datatableErrorText</name>
-            <fieldText>&lt;p&gt;意図的にエラーが発生するパターンで設定&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;------------------&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;意図的にエラーが発生するパターンで設定&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -146,25 +131,9 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>screen_sample_Section2</name>
-            <fieldType>RegionContainer</fieldType>
-            <fields>
-                <name>screen_sample_Section2_Column1</name>
-                <fieldType>Region</fieldType>
-                <inputParameters>
-                    <name>width</name>
-                    <value>
-                        <stringValue>12</stringValue>
-                    </value>
-                </inputParameters>
-                <isRequired>false</isRequired>
-            </fields>
-            <isRequired>false</isRequired>
-        </fields>
-        <fields>
             <name>display_datatableText</name>
             <fieldText
-      >&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
+      >&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;------------------&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>

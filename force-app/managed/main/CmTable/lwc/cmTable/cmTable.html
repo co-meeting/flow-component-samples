@@ -10,32 +10,13 @@
     <div if:true={hasData} style={style}>
       <c-custom-datatable
         key-field="id"
-        data={records}
+        data={originalRecords}
         columns={columns}
         hide-checkbox-column={isCheckbox}
         onrowselection={handleSelectedRow}
       >
       </c-custom-datatable>
     </div>
-    <!-- データが沢山ある時の表示-->
-    <template if:true={hasMoreRecords}>
-      <lightning-layout horizontal-align="space">
-        <lightning-layout-item padding="around-small">
-          <template if:true={isLoadingMore}>
-            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
-          </template>
-          <template if:false={isLoadingMore}>
-            <lightning-button label="さらに読み込む" title="さらに読み込む" onclick={handleLoadMore}></lightning-button>
-            <lightning-button
-              label="すべて読み込む"
-              title="すべて読み込む"
-              onclick={handleLoadAll}
-              class="slds-m-left_small"
-            ></lightning-button>
-          </template>
-        </lightning-layout-item>
-      </lightning-layout>
-    </template>
     <!-- データが存在しない時の表示-->
     <template if:true={hasNoRecords}>
       <div class="slds-m-around_x-small">データはありません。</div>

@@ -1,6 +1,4 @@
 import { LightningElement, api, track, wire } from 'lwc';
-import { NavigationMixin } from 'lightning/navigation';
-import { CustomDatatableMixin } from 'c/customDatatableMixin';
 import { FlowAttributeChangeEvent } from 'lightning/flowSupport';
 import { getObjectInfo, getPicklistValuesByRecordType } from 'lightning/uiObjectInfoApi';
 
@@ -21,9 +19,8 @@ const typeMappings = {
   Percent: 'text', // TODO:いつか対応したい（textにしている理由：例えば商談の確度(%)などPercentであるが、画面表示上の”10%”は10とデータが格納され、"percent"を利用しようとすると1000%になってしまうため）
   String: 'text'
 };
-const PAGE_SIZE = 100;
 
-export default class CmTable extends CustomDatatableMixin(NavigationMixin(LightningElement)) {
+export default class CmTable extends LightningElement {
   @api fieldNames;
   @api originalRecords;
   @api height;
@@ -38,6 +35,10 @@ export default class CmTable extends CustomDatatableMixin(NavigationMixin(Lightn
   // データの有無
   get hasData() {
     return this.objectName && !this.errorInfo && !this.isLoading;
+  }
+
+  get hasNoRecords() {
+    return !(this.originalRecords && this.originalRecords.length > 0);
   }
 
   // サーバー問い合わせ中であるか返却
@@ -196,15 +197,9 @@ export default class CmTable extends CustomDatatableMixin(NavigationMixin(Lightn
     return undefined;
   }
 
-  _initializationData() {
-    this.initRecords(this.originalRecords, PAGE_SIZE);
-  }
-
   // 選択された行の情報をselectedRecordsにセット
   handleSelectedRow(event) {
     const selectedRows = event.detail.selectedRows;
     this.dispatchEvent(new FlowAttributeChangeEvent('selectedRecords', selectedRows));
-    console.table(selectedRows);
-    console.log(JSON.stringify(event));
   }
 }

@@ -29,7 +29,7 @@
         <locationY>158</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>screen_sample</targetReference>
+            <targetReference>get_Leads</targetReference>
         </connector>
         <getFirstRecordOnly>false</getFirstRecordOnly>
         <object>Account</object>
@@ -43,11 +43,24 @@
         <queriedFields>Type</queriedFields>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordLookups>
+        <name>get_Leads</name>
+        <label>get_Leads</label>
+        <locationX>176</locationX>
+        <locationY>278</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>screen_sample</targetReference>
+        </connector>
+        <getFirstRecordOnly>false</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
     <screens>
         <name>screen2</name>
         <label>選択結果表示画面</label>
         <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationY>518</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -64,7 +77,7 @@
         <name>screen_sample</name>
         <label>CM Tableサンプル画面</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>398</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -107,9 +120,24 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
+            <name>screen_sample_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_sample_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
             <name>display_datatableErrorText</name>
-            <fieldText
-      >&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;------------------&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;意図的にエラーが発生するパターンで設定&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;意図的にエラーが発生するパターンで設定&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -131,9 +159,25 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
+            <name>screen_sample_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_sample_Section2_Column1</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
             <name>display_datatableText</name>
             <fieldText
-      >&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;------------------&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
+      >&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -166,6 +210,51 @@
                 <name>fieldNames</name>
                 <value>
                     <stringValue>Name,BillingAddress</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>screen_sample_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_sample_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>display_datatableNotDataText</name>
+            <fieldText>&lt;p&gt;データ１件も存在しないケースの対応&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>display_datatableNotData</name>
+            <dataTypeMappings>
+                <typeName>T</typeName>
+                <typeValue>Lead</typeValue>
+            </dataTypeMappings>
+            <extensionName>c:cmTable</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>objectName</name>
+                <value>
+                    <stringValue>Lead</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>originalRecords</name>
+                <value>
+                    <elementReference>get_Leads</elementReference>
                 </value>
             </inputParameters>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>

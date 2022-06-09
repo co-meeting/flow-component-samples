@@ -16,11 +16,11 @@ Flow Component Samples は、カスタム画面フローコンポーネントの
 
 #### 本番組織にインストールする
 
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1RQAS
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQAC
 
 #### sandbox 組織にインストールする
 
-https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1RQAS
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQAC
 
 ## ファイルフォルダ構造
 

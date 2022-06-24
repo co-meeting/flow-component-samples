@@ -36,7 +36,7 @@
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
-            <name>display_border2</name>
+            <name>display_border11</name>
             <extensionName>c:cmBorder</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
@@ -60,7 +60,7 @@
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
-                    <name>display_border3</name>
+                    <name>display_border22</name>
                     <extensionName>c:cmBorder</extensionName>
                     <fieldType>ComponentInstance</fieldType>
                     <inputParameters>
@@ -107,7 +107,7 @@
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
-                    <name>display_border1</name>
+                    <name>display_border33</name>
                     <extensionName>c:cmBorder</extensionName>
                     <fieldType>ComponentInstance</fieldType>
                     <inputParameters>
@@ -119,13 +119,13 @@
                     <inputParameters>
                         <name>borderStyle</name>
                         <value>
-                            <stringValue>dotted</stringValue>
+                            <stringValue>dashed</stringValue>
                         </value>
                     </inputParameters>
                     <inputParameters>
                         <name>borderColor</name>
                         <value>
-                            <stringValue>#990000</stringValue>
+                            <stringValue>#00ff00</stringValue>
                         </value>
                     </inputParameters>
                     <inputParameters>
@@ -158,6 +158,88 @@
                 <isRequired>false</isRequired>
             </fields>
             <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>display_border4</name>
+            <extensionName>c:cmBorder</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>borderColor</name>
+                <value>
+                    <stringValue>red</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderStyle</name>
+                <value>
+                    <stringValue>dotted</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderWidth</name>
+                <value>
+                    <numberValue>8.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>additionalStyle</name>
+                <value>
+                    <stringValue>margin: 0 auto;margin-bottom: 10px;</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>width</name>
+                <value>
+                    <stringValue>80%</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
+            <name>display_text7</name>
+            <fieldText
+      >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(255, 0, 0);&quot;&gt;※注意&lt;/strong&gt;&lt;strong style=&quot;color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;※ 表示されている内容はサンプルです。&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>display_border5</name>
+            <extensionName>c:cmBorder</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>borderColor</name>
+                <value>
+                    <stringValue>red</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderWidth</name>
+                <value>
+                    <numberValue>8.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderStyle</name>
+                <value>
+                    <stringValue>dotted</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>additionalStyle</name>
+                <value>
+                    <stringValue>margin: 0 auto;</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>width</name>
+                <value>
+                    <stringValue>80%</stringValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>

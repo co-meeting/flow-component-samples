@@ -11,7 +11,7 @@
     <targetConfigs>
       <targetConfig targets="lightning__FlowScreen">
         <property
-        label="border 16進カラーコード(未指定時:#c9c9c9)"
+        label="border 色(未指定時:#c9c9c9)"
         name="borderColor"
         type="String"
         default="#c9c9c9"

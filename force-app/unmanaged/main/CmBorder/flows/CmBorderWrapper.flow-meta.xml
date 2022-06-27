@@ -31,8 +31,35 @@
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
         <fields>
+            <name>display_borderError</name>
+            <extensionName>c:cmBorder</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>borderColor</name>
+                <value>
+                    <stringValue>aaaaaa</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderStyle</name>
+                <value>
+                    <stringValue>eeeee</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>borderWidth</name>
+                <value>
+                    <numberValue>-1.0</numberValue>
+                </value>
+            </inputParameters>
+            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+            <isRequired>true</isRequired>
+            <storeOutputAutomatically>true</storeOutputAutomatically>
+        </fields>
+        <fields>
             <name>display_text1</name>
-            <fieldText>&lt;p&gt;display_text1&lt;/p&gt;</fieldText>
+            <fieldText
+      >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー1&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;display_text1、サンプル文字列です。サンプル文字列です。サンプル文字列です。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -44,51 +71,54 @@
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
         <fields>
-            <name>display_text2</name>
-            <fieldText>&lt;p&gt;display_text2&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-        </fields>
-        <fields>
             <name>screen_sample_Section1</name>
             <fieldType>RegionContainer</fieldType>
             <fields>
                 <name>screen_sample_Section1_Column1</name>
                 <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>screen_sample_Section2</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_sample_Section2_Column1</name>
+                <fieldType>Region</fieldType>
                 <fields>
-                    <name>display_text3</name>
-                    <fieldText>&lt;p&gt;display_text3&lt;/p&gt;</fieldText>
+                    <name>display_text2</name>
+                    <fieldText
+          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー2&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text2&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
-                    <name>display_border22</name>
+                    <name>display_border222</name>
                     <extensionName>c:cmBorder</extensionName>
                     <fieldType>ComponentInstance</fieldType>
-                    <inputParameters>
-                        <name>borderColor</name>
-                        <value>
-                            <stringValue>aaaaaa</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>borderStyle</name>
-                        <value>
-                            <stringValue>eeeee</stringValue>
-                        </value>
-                    </inputParameters>
-                    <inputParameters>
-                        <name>borderWidth</name>
-                        <value>
-                            <numberValue>4.0</numberValue>
-                        </value>
-                    </inputParameters>
                     <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
                     <isRequired>true</isRequired>
                     <storeOutputAutomatically>true</storeOutputAutomatically>
                 </fields>
                 <fields>
-                    <name>display_text4</name>
-                    <fieldText>&lt;p&gt;display_text4&lt;/p&gt;</fieldText>
+                    <name>display_text3</name>
+                    <fieldText
+          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー3&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text3&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
+                </fields>
+                <fields>
+                    <name>display_border333</name>
+                    <extensionName>c:cmBorder</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
                 </fields>
                 <inputParameters>
                     <name>width</name>
@@ -99,11 +129,12 @@
                 <isRequired>false</isRequired>
             </fields>
             <fields>
-                <name>screen_sample_Section1_Column2</name>
+                <name>screen_sample_Section2_Column2</name>
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>display_text5</name>
-                    <fieldText>&lt;p&gt;display_text5&lt;/p&gt;</fieldText>
+                    <fieldText
+          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー4&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text4&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
@@ -146,13 +177,30 @@
                 </fields>
                 <fields>
                     <name>display_text6</name>
-                    <fieldText>&lt;p&gt;display_text6&lt;/p&gt;</fieldText>
+                    <fieldText
+          >&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text5&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
                     <name>width</name>
                     <value>
                         <stringValue>6</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
+        </fields>
+        <fields>
+            <name>screen_sample_Section3</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_sample_Section3_Column1</name>
+                <fieldType>Region</fieldType>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
                     </value>
                 </inputParameters>
                 <isRequired>false</isRequired>
@@ -241,8 +289,8 @@
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
-        <showFooter>true</showFooter>
-        <showHeader>true</showHeader>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
     </screens>
     <start>
         <locationX>50</locationX>

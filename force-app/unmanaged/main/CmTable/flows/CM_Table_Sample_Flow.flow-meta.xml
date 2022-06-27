@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <apiVersion>55.0</apiVersion>
     <assignments>
@@ -19,7 +19,7 @@
     </assignments>
     <assignments>
         <name>set_Task</name>
-        <label>作成するTODO一時定義</label>
+        <label>作成するToDo一時定義</label>
         <locationX>264</locationX>
         <locationY>518</locationY>
         <assignmentItems>
@@ -71,21 +71,21 @@
     <dynamicChoiceSets>
         <name>options_Priority</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true" />
-        <object xsi:nil="true" />
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
         <picklistField>Priority</picklistField>
         <picklistObject>Task</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>options_Status</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true" />
-        <object xsi:nil="true" />
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
         <picklistField>Status</picklistField>
         <picklistObject>Task</picklistObject>
     </dynamicChoiceSets>
     <interviewLabel>CM_Table_Sample_Flow {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>取引先TODO一括作成(CM Table Sample)</label>
+    <label>取引先ToDo一括作成(CM Table Sample)</label>
     <loops>
         <name>loop_SelectedRecords</name>
         <label>指定の取引先一覧確認</label>
@@ -121,7 +121,7 @@
     <processType>Flow</processType>
     <recordCreates>
         <name>insert_ToDoList</name>
-        <label>TODOタスク一括作成</label>
+        <label>ToDo一括作成</label>
         <locationX>176</locationX>
         <locationY>854</locationY>
         <connector>
@@ -157,8 +157,7 @@
         </connector>
         <fields>
             <name>displayInput_Message</name>
-            <fieldText
-      >&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;各取引先に関係したTODOを一括作成します。&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;各取引先に関係したToDoを一括作成します。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -289,8 +288,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>displaySuccess_Message</name>
-            <fieldText
-      >&lt;p&gt;&lt;strong style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;以下取引先に関係したタスクを一括作成しました。&lt;/strong&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;以下取引先に関係したToDoを一括作成しました。&lt;/strong&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -301,8 +299,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>displaySuccess_InputData1</name>
-                    <fieldText
-          >&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!input_Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!input_Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
@@ -318,8 +315,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>displaySuccess_InputData2</name>
-                    <fieldText
-          >&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>

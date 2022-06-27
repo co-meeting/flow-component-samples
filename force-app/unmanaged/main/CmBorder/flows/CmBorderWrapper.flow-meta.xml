@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>54.0</apiVersion>
     <interviewLabel>CmBorderWrapper {!$Flow.CurrentDateTime}</interviewLabel>
@@ -58,8 +58,7 @@
         </fields>
         <fields>
             <name>display_text1</name>
-            <fieldText
-      >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー1&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;display_text1、サンプル文字列です。サンプル文字列です。サンプル文字列です。&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー1&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;display_text1、サンプル文字列です。サンプル文字列です。サンプル文字列です。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>
@@ -94,8 +93,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>display_text2</name>
-                    <fieldText
-          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー2&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text2&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー2&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text2&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
@@ -108,8 +106,7 @@
                 </fields>
                 <fields>
                     <name>display_text3</name>
-                    <fieldText
-          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー3&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text3&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー3&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text3&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
@@ -133,8 +130,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>display_text5</name>
-                    <fieldText
-          >&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー4&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text4&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;strong style=&quot;font-size: 16px;&quot;&gt;サンプル文字列ヘッダー4&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text4&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <fields>
@@ -177,8 +173,7 @@
                 </fields>
                 <fields>
                     <name>display_text6</name>
-                    <fieldText
-          >&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text5&lt;/span&gt;&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;display_text5&lt;/span&gt;&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
@@ -247,8 +242,7 @@
         </fields>
         <fields>
             <name>display_text7</name>
-            <fieldText
-      >&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(255, 0, 0);&quot;&gt;※注意&lt;/strong&gt;&lt;strong style=&quot;color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;※ 表示されている内容はサンプルです。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;strong style=&quot;color: rgb(255, 0, 0);&quot;&gt;※注意&lt;/strong&gt;&lt;strong style=&quot;color: rgb(255, 0, 0); background-color: rgb(255, 255, 255);&quot;&gt;※ 表示されている内容はサンプルです。&lt;/strong&gt;&lt;/p&gt;&lt;p style=&quot;text-align: center;&quot;&gt;&lt;br&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>

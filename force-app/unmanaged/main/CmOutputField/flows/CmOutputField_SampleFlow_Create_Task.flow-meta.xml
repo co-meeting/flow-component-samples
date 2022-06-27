@@ -1,19 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <apiVersion>55.0</apiVersion>
     <dynamicChoiceSets>
         <name>options_Priority</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true" />
-        <object xsi:nil="true" />
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
         <picklistField>Priority</picklistField>
         <picklistObject>Task</picklistObject>
     </dynamicChoiceSets>
     <dynamicChoiceSets>
         <name>options_Status</name>
         <dataType>Picklist</dataType>
-        <displayField xsi:nil="true" />
-        <object xsi:nil="true" />
+        <displayField xsi:nil="true"/>
+        <object xsi:nil="true"/>
         <picklistField>Status</picklistField>
         <picklistObject>Task</picklistObject>
     </dynamicChoiceSets>
@@ -28,7 +28,7 @@
         <expression>TEXT({!$Flow.CurrentDateTime}) &amp; &apos;-&apos; &amp; {!get_Account.Name}</expression>
     </formulas>
     <interviewLabel>取引先向けTODO作成フロー(CM OutputFieldd Sample) {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>取引先向けTODO作成フロー(CM OutputField Sample)</label>
+    <label>取引先向けToDo作成フロー(CM OutputField Sample)</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -156,8 +156,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>display_comfirmToDoData</name>
-                    <fieldText
-          >&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!formula_Todo&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Subject&lt;/span&gt;-{!input_Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;コメント&lt;/p&gt;&lt;p&gt;{!input_Description}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!formula_Todo&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Subject&lt;/span&gt;-{!input_Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;コメント&lt;/p&gt;&lt;p&gt;{!input_Description}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
@@ -583,8 +582,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>display_SuccessMessage</name>
-            <fieldText
-      >&lt;p&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;TODOを作成しました。&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;ToDoを作成しました。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -599,6 +597,7 @@
     </start>
     <status>Draft</status>
     <variables>
+        <description>取引先責任者Id</description>
         <name>recordId</name>
         <dataType>String</dataType>
         <isCollection>false</isCollection>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <Flow xmlns="http://soap.sforce.com/2006/04/metadata">
     <apiVersion>54.0</apiVersion>
     <interviewLabel>CmTableWrapper {!$Flow.CurrentDateTime}</interviewLabel>
@@ -66,8 +66,7 @@
         <allowPause>true</allowPause>
         <fields>
             <name>display_selectedRecords</name>
-            <fieldText
-      >&lt;p&gt;前画面にて選択された取引先レコード情報:&lt;/p&gt;&lt;p&gt;{!input_datatable.selectedRecords}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;前画面にて選択された取引先レコード情報:&lt;/p&gt;&lt;p&gt;{!input_datatable.selectedRecords}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <showFooter>true</showFooter>
@@ -176,8 +175,7 @@
         </fields>
         <fields>
             <name>display_datatableText</name>
-            <fieldText
-      >&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;取引先一覧を通常表示,意図的に名前だけ表示&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
         <fields>

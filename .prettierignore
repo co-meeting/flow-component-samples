@@ -10,3 +10,6 @@
 coverage/
 
 force-app/managed/main/UnofficialSF/*
+
+force-app/managed/main/UnofficialSF/*
+**/flows/**

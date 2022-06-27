@@ -11,20 +11,20 @@
     <targetConfigs>
       <targetConfig targets="lightning__FlowScreen">
         <property
-        label="border 色(未指定時:#c9c9c9)"
+        label="線の色(未指定時:#c9c9c9)"
         name="borderColor"
         type="String"
         default="#c9c9c9"
         role="inputOnly"
       />
         <property
-        label="border スタイル(未指定時:solid)"
+        label="線のスタイル(未指定時:solid)"
         name="borderStyle"
         type="String"
         default="solid"
         role="inputOnly"
       />
-        <property label="border 太さ[px](未指定時:1)" name="borderWidth" type="Integer" default="1" role="inputOnly" />
+        <property label="線の太さ[px](未指定時:1)" name="borderWidth" type="Integer" default="1" role="inputOnly" />
         <property label="横幅(未指定時:100%)" name="width" type="String" default="100%" role="inputOnly" />
         <property label="追加CSS" name="additionalStyle" type="String" default="" role="inputOnly" />
       </targetConfig>

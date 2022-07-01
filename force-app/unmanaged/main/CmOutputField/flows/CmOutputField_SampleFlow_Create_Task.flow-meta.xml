@@ -25,7 +25,7 @@
     <formulas>
         <name>formula_TodoSubject</name>
         <dataType>String</dataType>
-        <expression>TEXT({!$Flow.CurrentDateTime}) &amp; &apos;-&apos; &amp; {!get_Account.Name}</expression>
+        <expression>TEXT(YEAR(TODAY())) &amp; LPAD(TEXT(MONTH(TODAY())), 2 , &apos;0&apos;) &amp; LPAD(TEXT(DAY(TODAY())), 2 , &apos;0&apos;) &amp; &apos;-&apos; &amp; {!get_Account.Name} &amp; &apos;-&apos; &amp; {!input_Subject}</expression>
     </formulas>
     <interviewLabel>取引先向けTODO作成フロー(CM OutputFieldd Sample) {!$Flow.CurrentDateTime}</interviewLabel>
     <label>取引先向けToDo作成フロー(CM OutputField Sample)</label>
@@ -52,7 +52,7 @@
         <name>create_Task</name>
         <label>ToDo作成</label>
         <locationX>176</locationX>
-        <locationY>638</locationY>
+        <locationY>758</locationY>
         <connector>
             <targetReference>screen_Success</targetReference>
         </connector>
@@ -83,7 +83,7 @@
         <inputAssignments>
             <field>Subject</field>
             <value>
-                <elementReference>input_Subject</elementReference>
+                <elementReference>formula_TodoSubject</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -102,7 +102,7 @@
         <locationY>278</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>screen_Edit</targetReference>
+            <targetReference>screen_View</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -141,7 +141,7 @@
         <name>screen_Comfirm</name>
         <label>確認画面</label>
         <locationX>176</locationX>
-        <locationY>518</locationY>
+        <locationY>638</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -156,7 +156,7 @@
                 <fieldType>Region</fieldType>
                 <fields>
                     <name>display_comfirmToDoData</name>
-                    <fieldText>&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!formula_Todo&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(68, 68, 68);&quot;&gt;Subject&lt;/span&gt;-{!input_Subject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;コメント&lt;/p&gt;&lt;p&gt;{!input_Description}&lt;/p&gt;</fieldText>
+                    <fieldText>&lt;p&gt;件名&lt;/p&gt;&lt;p&gt;{!formula_TodoSubject}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;期日&lt;/p&gt;&lt;p&gt;{!input_ActivityDate}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;優先度&lt;/p&gt;&lt;p&gt;{!input_Priority}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;状況&lt;/p&gt;&lt;p&gt;{!input_Status}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;コメント&lt;/p&gt;&lt;p&gt;{!input_Description}&lt;/p&gt;</fieldText>
                     <fieldType>DisplayText</fieldType>
                 </fields>
                 <inputParameters>
@@ -337,7 +337,7 @@
         <name>screen_Edit</name>
         <label>入力画面</label>
         <locationX>176</locationX>
-        <locationY>398</locationY>
+        <locationY>518</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -576,7 +576,7 @@
         <name>screen_Success</name>
         <label>完了画面</label>
         <locationX>176</locationX>
-        <locationY>758</locationY>
+        <locationY>878</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
@@ -584,6 +584,186 @@
             <name>display_SuccessMessage</name>
             <fieldText>&lt;p&gt;&lt;span style=&quot;color: rgb(68, 68, 68); background-color: rgb(255, 255, 255);&quot;&gt;ToDoを作成しました。&lt;/span&gt;&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>screen_View</name>
+        <label>事前確認画面</label>
+        <locationX>176</locationX>
+        <locationY>398</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <connector>
+            <targetReference>screen_Edit</targetReference>
+        </connector>
+        <fields>
+            <name>screen_View_Section1</name>
+            <fieldType>RegionContainer</fieldType>
+            <fields>
+                <name>screen_View_Section1_Column1</name>
+                <fieldType>Region</fieldType>
+                <fields>
+                    <name>display_ViewName</name>
+                    <dataTypeMappings>
+                        <typeName>T</typeName>
+                        <typeValue>Account</typeValue>
+                    </dataTypeMappings>
+                    <extensionName>c:cmOutputField</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value>
+                            <stringValue>Account</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>record</name>
+                        <value>
+                            <elementReference>get_Account</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>fieldName</name>
+                        <value>
+                            <stringValue>Name</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>display_ViewAccountAddress</name>
+                    <dataTypeMappings>
+                        <typeName>T</typeName>
+                        <typeValue>Account</typeValue>
+                    </dataTypeMappings>
+                    <extensionName>c:cmOutputField</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value>
+                            <stringValue>Account</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>record</name>
+                        <value>
+                            <elementReference>get_Account</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>fieldName</name>
+                        <value>
+                            <stringValue>BillingAddress</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>display_ViewAccountPhone</name>
+                    <dataTypeMappings>
+                        <typeName>T</typeName>
+                        <typeValue>Account</typeValue>
+                    </dataTypeMappings>
+                    <extensionName>c:cmOutputField</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value>
+                            <stringValue>Account</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>record</name>
+                        <value>
+                            <elementReference>get_Account</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>fieldName</name>
+                        <value>
+                            <stringValue>Phone</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>diplay_ViewContactName</name>
+                    <dataTypeMappings>
+                        <typeName>T</typeName>
+                        <typeValue>Contact</typeValue>
+                    </dataTypeMappings>
+                    <extensionName>c:cmOutputField</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value>
+                            <stringValue>Contact</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>record</name>
+                        <value>
+                            <elementReference>get_Contact</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>fieldName</name>
+                        <value>
+                            <stringValue>Name</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <fields>
+                    <name>diplay_ViewContactEmail</name>
+                    <dataTypeMappings>
+                        <typeName>T</typeName>
+                        <typeValue>Contact</typeValue>
+                    </dataTypeMappings>
+                    <extensionName>c:cmOutputField</extensionName>
+                    <fieldType>ComponentInstance</fieldType>
+                    <inputParameters>
+                        <name>objectName</name>
+                        <value>
+                            <stringValue>Contact</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>record</name>
+                        <value>
+                            <elementReference>get_Contact</elementReference>
+                        </value>
+                    </inputParameters>
+                    <inputParameters>
+                        <name>fieldName</name>
+                        <value>
+                            <stringValue>Email</stringValue>
+                        </value>
+                    </inputParameters>
+                    <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
+                    <isRequired>true</isRequired>
+                    <storeOutputAutomatically>true</storeOutputAutomatically>
+                </fields>
+                <inputParameters>
+                    <name>width</name>
+                    <value>
+                        <stringValue>12</stringValue>
+                    </value>
+                </inputParameters>
+                <isRequired>false</isRequired>
+            </fields>
+            <isRequired>false</isRequired>
         </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>

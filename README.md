@@ -22,6 +22,35 @@ https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQA
 
 https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQAC
 
+### パッケージのインストールにおける注意事項
+
+このパッケージは、UnofficialSF が公開している 2022 年 4 月時点のソースコードを利用して開発しております。よって、UnofficialSF が公開しているロック解除済みパッケージ「FlowScreenComponentsBasePack」がインストールされている組織ではインストールに失敗して利用できないため、ご了承ください。
+
+### インストールされるパッケージの内容
+
+| コンポーネント名            | コンポーネントの種類                                                                                                                                                 |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| cmBorder                    | Lightning Web コンポーネントバンドル<br>CM Border コンポーネント                                                                                                     |
+| cmTable                     | Lightning Web コンポーネントバンドル<br>CM Table コンポーネント                                                                                                      |
+| customDatatable             | Lightning Web コンポーネントバンドル<br>CM Table 関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）                                      |
+| customDatatableAddress      | Lightning Web コンポーネントバンドル<br>CM Table 関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）                                      |
+| customDatatablePicklist     | Lightning Web コンポーネントバンドル<br>CM Table 関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません                                        |
+| customDatatableRecordLink   | Lightning Web コンポーネントバンドル<br>CM Table 関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）                                      |
+| cmOutputField               | Lightning Web コンポーネントバンドル<br>CM OutputField コンポーネント                                                                                                |
+| cmOutputFieldEditor         | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ用のコンポーネント（画面フローのカスタムコンポーネント一覧には表示されません。）    |
+| fsc_flowCombobox            | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）(\*1) |
+| fsc_flowComboboxUtils       | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）(\*1) |
+| fsc_fieldSelector           | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）(\*1) |
+| fsc_pickObjectAndField      | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）(\*1) |
+| fsc_pickObjectAndFieldUtils | Lightning Web コンポーネントバンドル<br>CM OutputField カスタムプロパティエディタ関連コンポーネント（画面フローのカスタムコンポーネント一覧には表示されません）(\*1) |
+| FieldPickerController       | Apex クラス<br>CM OutputField カスタムプロパティエディタ関連ファイルです。(\*2)                                                                                      |
+| FieldPickerControllerTest   | Apex クラス<br>CM OutputField カスタムプロパティエディタ関連ファイルです。(\*2)                                                                                      |
+| FieldSelectorController     | Apex クラス<br>CM OutputField カスタムプロパティエディタ関連ファイルです。(\*2)                                                                                      |
+| FieldSelectorControllerTest | Apex クラス<br>CM OutputField カスタムプロパティエディタ関連ファイルです。(\*2)                                                                                      |
+
+(*1:UnofficialSF の 2022 年 4 月時点での公開ソースを利用しています。関係するパッケージは FlowScreenComponentsBasePack です。)
+(*2:UnofficialSF の 2022 年 4 月時点での公開ソースを利用しています。関係するパッケージは FlowActionsBasePack です。)
+
 ## ファイルフォルダ構造
 
 ```

@@ -125,7 +125,6 @@ export default class CmTable extends LightningElement {
     if (data) {
       this.errorInfo = null;
       this._initializationColumns();
-      this._initializationData();
     } else if (error) {
       console.error(error);
       this.errorInfo = {

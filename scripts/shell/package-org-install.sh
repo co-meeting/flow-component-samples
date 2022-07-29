@@ -5,9 +5,9 @@ bash --version
 
 # 最新のパッケージバージョンIDを取得
 echo ""
-echo "sfdx force:package:version:list --packages 0Ho5F000000GmadSAC --json --concise"
-sfdx force:package:version:list --packages 0Ho5F000000GmadSAC --concise
-LIST_JSON=`sfdx force:package:version:list --packages 0Ho5F000000GmadSAC --json --concise`
+echo "sfdx force:package:version:list --packages 0Ho5F000000GmanSAC --json --concise"
+sfdx force:package:version:list --packages 0Ho5F000000GmanSAC --concise
+LIST_JSON=`sfdx force:package:version:list --packages 0Ho5F000000GmanSAC --json --concise`
 
 ##### 実行結果から必要な情報を変数に格納する方法要確認
 LIST_LENGTH=`echo $LIST_JSON |  jq '.result | length'`

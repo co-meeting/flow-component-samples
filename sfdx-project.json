@@ -4,8 +4,8 @@
       "path": "force-app/managed",
       "default": true,
       "package": "Flow Component Samples",
-      "versionName": "ver 0.2",
-      "versionNumber": "0.2.0.NEXT"
+      "versionName": "ver 0.3",
+      "versionNumber": "0.3.0.NEXT"
     },
     {
       "path": "force-app/unmanaged"
@@ -20,6 +20,7 @@
     "Flow Component Samples@0.1.0-1": "04t5F000000Io1RQAS",
     "Flow Component Samples@0.1.0-2": "04t5F000000Io1bQAC",
     "Flow Component Samples@0.1.0-3": "04t5F000000Io2FQAS",
-    "Flow Component Samples@0.2.0-1": "04t5F000000Io2eQAC"
+    "Flow Component Samples@0.2.0-1": "04t5F000000Io2eQAC",
+    "Flow Component Samples@0.3.0-1": "04t5F000000NPzpQAG"
   }
 }

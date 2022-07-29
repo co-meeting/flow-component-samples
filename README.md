@@ -16,11 +16,11 @@ Flow Component Samples は、カスタム画面フローコンポーネントの
 
 #### 本番組織にインストールする
 
-https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQAC
+https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000NPzpQAG
 
 #### sandbox 組織にインストールする
 
-https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000Io1bQAC
+https://test.salesforce.com/packaging/installPackage.apexp?p0=04t5F000000NPzpQAG
 
 ### パッケージのインストールにおける注意事項
 
@@ -176,6 +176,8 @@ npm run package:version:create
 ```
 npm run package:version:list
 ```
+
+上記コマンド実行時に、もし`ERROR running force:package:version:list: The encrypted data is not properly formatted. `というエラーメッセージが発生したら devhub 組織を意図的にログアウトして、認証しなおしましょう。ログアウト:`sfdx auth:logout --targetusername cm-devhub` >> DevHub 組織の再認証:`sfdx force:auth:web:login --setdefaultdevhubusername -a cm-devhub`
 
 ### パッケージインストール用スクラッチ組織の作成
 
